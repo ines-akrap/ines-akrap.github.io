@@ -1,0 +1,55 @@
+body {
+    font-family: 'Inconsolata', monospace;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background: rgb(5, 12, 5);
+}
+
+.terminal {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.line {
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color: #2EF745;
+    letter-spacing: .10em;
+    margin: 0 auto;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.typing {
+    border-right: .10em solid #2EF745;
+    animation:
+        typing 3.5s steps(30, end),
+        blinking-cursor .8s step-end infinite;
+}
+
+.social-media-box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.social-icon img {
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blinking-cursor {
+    from, to { border-color: transparent }
+    50% { border-color:  rgb(46, 243, 69) }
+}
