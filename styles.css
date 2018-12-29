@@ -15,14 +15,21 @@ body {
 }
 
 .line {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 60px;
+    line-height: 70px;
     text-align: center;
     color: #2EF745;
     letter-spacing: .10em;
     margin: 0 auto;
-    overflow-x: auto;
+    overflow-x: hidden;
     white-space: nowrap;
+}
+
+@media only screen and (min-width: 1024px) {
+    .line {
+        font-size: 40px;
+        line-height: 50px;
+    }
 }
 
 .typing {
@@ -39,9 +46,17 @@ body {
 }
 
 .social-icon img {
-    height: 40px;
-    width: 40px;
-    padding: 5px;
+    height: 80px;
+    width: 80px;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .social-icon img {
+        height: 40px;
+        width: 40px;
+        padding: 5px;
+    }
 }
 
 @keyframes typing {
